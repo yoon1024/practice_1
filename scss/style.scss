@@ -75,7 +75,7 @@ a {text-decoration: none;}
     width: 1400px;
     // background-color: rgb(209, 208, 201);
     margin: auto;
-    padding-top: 100px;
+    padding-top: 100px; padding-bottom: 100px;
     // border: 1px solid #000;
     overflow: hidden;
    .inner_1{
@@ -162,3 +162,93 @@ a {text-decoration: none;}
 //         }
 //     }
 // }
+
+
+
+#product{
+    background-color: rgb(220, 229, 238);
+    padding-top: 30px;
+    >article{
+        // border: 1px solid #000;
+        text-align: center;
+        p{
+            &:nth-of-type(1){
+                font: 17px/1 'Frank Ruhl Libre'; color:#555;
+            }
+            &:nth-of-type(2){
+                font: 20px/1.2 'Karla';
+            }
+        }
+        h2{
+            font: bold 40px 'Frank Ruhl Libre'; color: #333;
+            margin-bottom: 30px;
+        }
+    }
+    .wrap{
+        display: flex; justify-content: space-evenly;
+        margin-top: 150px;
+        article{
+            width: 300px; height: 350px; text-align: center;
+            img{
+                border-radius: 50%;
+                background-color: rgb(230,230,230);
+                width: 250px; height: 250px; object-fit: contain;
+                // 아래에서 텍스트가 올라오는 hover 효과
+            }
+            h3{
+                font: 20px 'Frank Ruhl Libre'; color: #333;
+            }
+            p{
+                font: 20px 'Karla'; color: #333;
+            }
+        }
+    }
+}
+
+
+#slide{
+    margin-top: 200px; text-align: center; padding-bottom: 200px;
+    article{
+        p{
+            &:nth-of-type(1){font: 20px/1 'Frank Ruhl Libre'; color: #777;}
+            &:nth-of-type(2){font: 15px/1.2 'Karla'; color: #666; 
+            margin-top: 20px;}
+        }
+        h2{
+            font: 40px 'Frank Ruhl Libre'; color: #333;
+        }
+    }
+    .wrap{
+        margin-top: 80px;
+        img{width: 1000px; height: 500px; object-fit: cover;
+        }
+    }
+}
+
+#footer{
+    width: 100%; padding: 100px 0; background: rgb(220, 229, 238);
+    .inner{
+        width: 1180px; margin: 0 auto;
+        &::after{
+            content: ''; display: block; clear: both;
+        }
+        h1{
+            font: bold 24px/1 'arial'; color: #666; float: left;
+        }
+        ul{
+            float: right;
+            li{
+                float: left; margin-left: 20px;
+                a{
+                    font: bold 14px/1 'arial'; color: #666;
+                }
+            }
+        }
+        address{
+            width: 100%; font: 14px/1.3 'arial'; color: #777; margin-bottom: 20px;    margin-top: 20px; float: left;    border-top: 1px solid #888; padding-top: 20px;
+        }
+        p{
+            width: 100%; font: 12px/1 'arial'; color: #777; float: left;
+        }
+    }
+}

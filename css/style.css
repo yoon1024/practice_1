@@ -79,6 +79,7 @@ a {
   width: 1400px;
   margin: auto;
   padding-top: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 #intro .inner_1 {
@@ -137,6 +138,125 @@ a {
 #intro .inner_2 p:nth-of-type(1) {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+#product {
+  background-color: rgb(220, 229, 238);
+  padding-top: 30px;
+}
+#product > article {
+  text-align: center;
+}
+#product > article p:nth-of-type(1) {
+  font: 17px/1 "Frank Ruhl Libre";
+  color: #555;
+}
+#product > article p:nth-of-type(2) {
+  font: 20px/1.2 "Karla";
+}
+#product > article h2 {
+  font: bold 40px "Frank Ruhl Libre";
+  color: #333;
+  margin-bottom: 30px;
+}
+#product .wrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+#product .wrap article {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+#product .wrap article img {
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+#product .wrap article h3 {
+  font: 20px "Frank Ruhl Libre";
+  color: #333;
+}
+#product .wrap article p {
+  font: 20px "Karla";
+  color: #333;
+}
+
+#slide {
+  margin-top: 200px;
+  text-align: center;
+  padding-bottom: 200px;
+}
+#slide article p:nth-of-type(1) {
+  font: 20px/1 "Frank Ruhl Libre";
+  color: #777;
+}
+#slide article p:nth-of-type(2) {
+  font: 15px/1.2 "Karla";
+  color: #666;
+  margin-top: 20px;
+}
+#slide article h2 {
+  font: 40px "Frank Ruhl Libre";
+  color: #333;
+}
+#slide .wrap {
+  margin-top: 80px;
+}
+#slide .wrap img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: rgb(220, 229, 238);
+}
+#footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner h1 {
+  font: bold 24px/1 "arial";
+  color: #666;
+  float: left;
+}
+#footer .inner ul {
+  float: right;
+}
+#footer .inner ul li {
+  float: left;
+  margin-left: 20px;
+}
+#footer .inner ul li a {
+  font: bold 14px/1 "arial";
+  color: #666;
+}
+#footer .inner address {
+  width: 100%;
+  font: 14px/1.3 "arial";
+  color: #777;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  float: left;
+  border-top: 1px solid #888;
+  padding-top: 20px;
+}
+#footer .inner p {
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #777;
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */
